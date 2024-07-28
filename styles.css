@@ -1,0 +1,110 @@
+body {
+  text-align: center;
+  /* background: linear-gradient(180deg, #ffd1dc, #ffe1a8 60%); */
+  /* background: linear-gradient(180deg, #ff9a9e, #fad0c4 60%); */
+  /* background: linear-gradient(180deg, #ff9a9e, #fecfef 60%); */
+  /* background: linear-gradient(180deg, #f47988, #7ec7ee 60%); */
+  background: linear-gradient(180deg, #fddb92, #d1fdff 60%);
+  font-family: 'Arvo', serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+h1 {
+  
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
+footer {
+  /* color: #DBEDF3; */
+  color: black;
+  font-family: sans-serif;
+}
+
+.w {
+background-image: url('images/tom1.png');
+}
+
+.a {
+  background-image: url('images/tom2.png');
+}
+
+.s {
+  background-image: url('images/tom3.png');
+}
+
+.d {
+  background-image: url('images/tom4.png');
+}
+
+.j {
+  background-image: url('images/snare.png');
+}
+
+.k {
+  background-image: url('images/crash.png');
+}
+
+.l {
+  background-image: url('images/kick.png');
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+
+@keyframes playAnimation {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.playing {
+  animation: playAnimation 0.2s ease;
+}
